@@ -24,11 +24,11 @@ Access to a Palo Alto firewall with API access enabled. In this code,testing was
 
 1. Clone the repository
 
-git clone https://github.com/yzmar4real/firewall_automation.git
+git clone https://github.com/yzmar4real/networkassurance.git
 
 2. CD into the directory 
 
-cd firewall_automation
+cd networkassurance
 
 3. (Optional) Use the directory as a virtual environment for the project
 
