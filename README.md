@@ -38,19 +38,15 @@ python3 -m venv .
 source bin/activate
 
 # Usage
-1. Run the Main.py file using the command - python Main.py
 
-2. Follow the prompts to enter the firewall IP address, username, and password
+1. Edit the genie.yaml file and update the parameters with your own devices (multiple devices can be added as well)
 
-3. The tool will retrieve the firewall objects and security rules and policies, compare them, and output the used and non-used objects as json files and a excel sheet. 
+2. Run the pre_change.py file using the command - python pre_change.py
 
-# Functions
-This tool consists of the following functions:
+3. The script will connect to the firewall in the genie file and check the arp table, ping the entries and store the results in a json and csv file.
 
-1. get_api_key(fw_ip, fw_user, fw_pass): Retrieves the API key for the specified firewall IP address, username, and password.
-2. get_object_only(api_key, fw_ip): Retrieves a list of firewall objects for the specified API key and firewall IP address.
-3. get_object_details(api_key,fw_ip): Retrieves a detailed list of firewall objects (IP address & Object Name) for the specified API key and firewall IP address.  
-4. get_sec_rules(fw_ip, api_key): Retrieves a list of firewall security rules and policies for the specified firewall IP address and API key.
-5. get_firewall_info(): Prompts the user to enter the firewall IP address, username, and password.
-6. compare_lists(list1, list2): Compares two lists and returns the matching and non-matching values.
+4. After executing the change, run the post_change.py file using the command - python post_change.py
+
+5. Check the files folder for the results of the code run.
+   
 
