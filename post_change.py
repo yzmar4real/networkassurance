@@ -61,7 +61,7 @@ now = tt.now("GMT")
 starttime = now.format("YYYY-MM-DD_HH:mm:ss")
 print(starttime)
 
-file_path = os.path.abspath('./Testbed/dime2.yaml')
+file_path = os.path.abspath('./genie.yaml')
 pre_change_path = os.path.abspath('./files/arp_prechange.csv')
 postchange_path = os.path.abspath('./files/arp_postchange.csv')
 postchange_path_txt = os.path.abspath('./files/arp_postchange.txt')
