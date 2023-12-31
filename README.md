@@ -1,11 +1,11 @@
 # NetworkAssurance
-This repository captures 
-
-Python Code that allows Security Engineers to audit their palo alto firewalls, specifically checking through the rules and policies for objects that are not in use. This is particularly helpful in instances where brownfield environments are onboarded, or cybersecurity audits are carried out to ensure that objects are well-organized and comply with specific standards. 
+This repository highlights Python Code that enables CyberSecurity Engineers to include network assurance in their change management process. This is particularly helpful when making changes to devices (firewalls, switches) which can be disruptive in nature, in providing actual assurance that things are exactly as they were before and after the change. 
 
 # Use-Case Description 
 
-The thoughts around the use-case for this project is built around CyberSecurity Engineers encountering a brownfield environment and have to audit & assess existing policies, objects, etc. having an automated way of extracting, filtering, comparing and documenting the results of objects (e.g tags, service ports, applications and in this case IP-Objects), goes a long way in providing a solid base to start from. 
+The thoughts around the use-case for this project is built around CyberSecurity Engineers making changes to the firewalls that pass critical traffic - e.g default gateway for servers, transit perimeter firewall for internet traffic, etc. This goes a long way in providing assurance that the environment is working as should post-change in addition to the usual confirmation from end users. 
+
+Connectivity to the devices is done using Cisco's PYATS framework, while storing the relevant outputs in json/CSV files, and printing out the data in PrettyTable. 
 
 # Contacts
 
@@ -16,9 +16,8 @@ Oluyemi Oshunkoya (yemi_o@outlook.com)
 Before running this tool, you need to have the following:
 
 Python 3.x installed on your system
-The requests library installed. You can install it using the following command: pip install requests
-Pandas library installed. You can install it using the following command: pip install pandas
-Access to a Palo Alto firewall with API access enabled. In this code,testing was done with Palo Alto Firewalls running v10.0 Code in standalone mode.
+
+Libraries: pendulum, prettytable, genie, pyats, re, csv, json, os, sys, logging, time
 
 # Setup
 
